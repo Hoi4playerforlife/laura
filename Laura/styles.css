@@ -1,4 +1,7 @@
 h1{
     color: black;
-    font-size: 100px;
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Times New Roma', Times, serif;
+    text-shadow: 2px 2px 4px #000000;
 }
