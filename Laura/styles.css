@@ -4,13 +4,19 @@ h1{
     text-align: center;
     font-family: 'Times New Roma', Times, serif;
     text-shadow: 4px 4px 8px black;
+    
+
+    }
+
+.tittel{
+    border: 40px solid black;
+    padding: 20px;
+    margin: 50px;
+    width: 1000px;
+    margin-left: 200px;
+    margin-right: 300px;
 }
 
-img{
-margin-left: 500px;
-margin-right: 50px;
-margin-top: 50px;
-}
 .container {
     display: flex;
     flex-direction: column;
@@ -19,7 +25,7 @@ margin-top: 50px;
 }
 
 .container img {
-    width: 400px;
+    width: 500px;
 }
 
 nav {
