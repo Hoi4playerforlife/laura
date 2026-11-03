@@ -1,48 +1,63 @@
-h1{
-    color: black;
-    font-size: 70px;
-    text-align: center;
-    font-family: 'Times New Roma', Times, serif;
-    text-shadow: 4px 4px 8px black;
-    
 
-    }
-
-.tittel{
-    border: 40px solid black;
-    padding: 20px;
-    margin: 50px;
-    width: 1000px;
-    margin-left: 200px;
-    margin-right: 300px;
+body {
+    background-color: #e8ecff;
+    font-family: Verdana, Arial, sans-serif;
+    color: #222244;
 }
-
+ 
+h1 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 3px 3px 6px #222244;
+}
+ 
+.tittel {
+    background-color: #5b5bd6;
+    border: 8px solid white;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 1000px;
+}
+ 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
-
+ 
 .container img {
     width: 500px;
+    border: 8px solid white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px grey;
 }
-
+ 
 nav {
     display: flex;
     gap: 20px;
 }
-
+ 
 nav a {
-    background: red;
+    background: #ff6b9d;
     width: 160px;
     height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px grey;
 }
-
+ 
+nav a:hover {
+    background: #5b5bd6;
+}
+/* Hover-metoden (nav a:hover) er laget med hjelp av KI (Claude fra Anthropic) */
+ 
+ 
 nav a span {
     background: white;
     color: black;
@@ -53,76 +68,71 @@ nav a span {
     justify-content: center;
     align-items: center;
 }
-
-
+ 
 h2 {
-    color: black;
-    font-size: 50px;
+    color: #5b5bd6;
+    font-size: 40px;
     margin-left: 50px;
-    margin-top: 200px;
+    margin-top: 50px;
 }
+ 
 ol {
-    color: black;
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 50px;
+    line-height: 1.6;
 }
-
-.favoritter {
-    width: fit-content;
-    margin-left: auto;
-    text-align: left;
-    font-size: 50px;
-    margin-right: 50px;
-}
-
-.favoritter ul {
-    list-style-position: outside;
-    padding-left: 40px;
-    font-size: 30px;
-}
-
-
+ 
 .innhold {
     display: flex;
+    justify-content: center;
     align-items: flex-start;
     gap: 40px;
+    margin-top: 40px;
 }
-
-.
-
+ 
 .kattebilde {
     width: 400px;
     height: 400px;
     object-fit: cover;
-    margin-left: 50px;
-    margin-top: 10px;
+    border: 8px solid white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px grey;
 }
-
+ 
 .kj-favoritter {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin-left: auto;
-    margin-right: 50px;
 }
-
+ 
 .kj {
-    width: 500px;
-    height: 600px;
+    width: 400px;
+    height: 500px;
     object-fit: cover;
-    margin: 0;
+    border: 8px solid white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px grey;
 }
-
+ 
 .favoritter {
-    width: 500px;
-    text-align: right;
-    font-size: 50px;
-    margin: 0;
+    width: 400px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px grey;
 }
-
-.favoritter ul {
-    list-style-position: outside;
-    padding-left: 40px;
+ 
+.favoritter h3 {
+    color: #5b5bd6;
     font-size: 30px;
+    margin-top: 0;
+}
+ 
+.favoritter ul {
+    list-style-position: inside;
+    font-size: 20px;
+    line-height: 1.8;
+    padding: 0;
+    margin: 0;
 }
