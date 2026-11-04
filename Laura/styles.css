@@ -1,23 +1,25 @@
 
 body {
-    background-color: #e8ecff;
-    font-family: Verdana, Arial, sans-serif;
-    color: #222244;
+    background: radial-gradient(circle at top, #2c2517, #0a0a0a 70%);
+    background-attachment: fixed;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #e8d9a8;
 }
  
 h1 {
-    color: white;
-    font-size: 60px;
+    color: #d4af37;
+    font-size: 50px;
+    font-weight: normal;
     text-align: center;
-    text-shadow: 3px 3px 6px #222244;
+    text-transform: uppercase;
+    letter-spacing: 8px;
 }
  
 .tittel {
-    background-color: #5b5bd6;
-    border: 8px solid white;
-    border-radius: 30px;
-    padding: 20px;
-    margin: 30px auto;
+    border-top: 2px solid #d4af37;
+    border-bottom: 2px solid #d4af37;
+    padding: 25px;
+    margin: 40px auto;
     max-width: 1000px;
 }
  
@@ -25,14 +27,14 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 35px;
 }
  
 .container img {
     width: 500px;
-    border: 8px solid white;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px grey;
+    padding: 12px;
+    background-color: #0a0a0a;
+    border: 2px solid #d4af37;
 }
  
 nav {
@@ -41,45 +43,58 @@ nav {
 }
  
 nav a {
-    background: #ff6b9d;
+    border: 2px solid #d4af37;
     width: 160px;
     height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    border-radius: 20px;
-    box-shadow: 3px 3px 10px grey;
+    transition: background 0.5s;
 }
  
 nav a:hover {
-    background: #5b5bd6;
+    background: #d4af37;
 }
-/* Hover-metoden (nav a:hover) er laget med hjelp av KI (Claude fra Anthropic) */
- 
+/* Hover-metoden over (nav a:hover) er laget med hjelp av KI */
  
 nav a span {
-    background: white;
-    color: black;
+    color: #d4af37;
+    border: 1px solid #d4af37;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+ 
+nav a:hover span {
+    color: #0a0a0a;
+    border-color: #0a0a0a;
 }
  
 h2 {
-    color: #5b5bd6;
-    font-size: 40px;
+    color: #d4af37;
+    font-size: 34px;
+    font-weight: normal;
+    letter-spacing: 3px;
     margin-left: 50px;
-    margin-top: 50px;
+    margin-top: 60px;
 }
  
 ol {
-    font-size: 25px;
+    font-size: 22px;
     margin-left: 50px;
-    line-height: 1.6;
+    line-height: 1.9;
+}
+ 
+ol li::marker {
+    color: #d4af37;
 }
  
 .innhold {
@@ -91,48 +106,74 @@ ol {
 }
  
 .kattebilde {
-    width: 400px;
-    height: 400px;
+    width: 376px;
+    height: 376px;
     object-fit: cover;
-    border: 8px solid white;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px grey;
+    padding: 12px;
+    background-color: #0a0a0a;
+    border: 2px solid #d4af37;
 }
  
 .kj-favoritter {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
  
 .kj {
-    width: 400px;
-    height: 500px;
+    width: 376px;
+    height: 476px;
     object-fit: cover;
-    border: 8px solid white;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px grey;
+    padding: 12px;
+    background-color: #0a0a0a;
+    border: 2px solid #d4af37;
 }
  
 .favoritter {
-    width: 400px;
-    background-color: white;
-    border-radius: 20px;
+    width: 376px;
     padding: 20px;
-    box-shadow: 5px 5px 15px grey;
+    border: 2px solid #d4af37;
+    outline: 1px solid #d4af37;
+    outline-offset: 6px;
 }
  
 .favoritter h3 {
-    color: #5b5bd6;
-    font-size: 30px;
+    color: #d4af37;
+    font-size: 26px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
     margin-top: 0;
 }
  
 .favoritter ul {
     list-style-position: inside;
-    font-size: 20px;
-    line-height: 1.8;
+    font-size: 18px;
+    line-height: 1.9;
     padding: 0;
     margin: 0;
 }
+ 
+.favoritter li::marker {
+    color: #d4af37;
+}
+ 
+.interesser {
+    max-width: 700px;
+    margin: 60px auto 0 auto;
+    padding: 20px 30px;
+    border: 2px solid #d4af37;
+    outline: 1px solid #d4af37;
+    outline-offset: 6px;
+}
+ 
+.interesser h2 {
+    margin: 0 0 10px 0;
+}
+ 
+.interesser ol {
+    margin: 0;
+    padding-left: 30px;
+}
+ 
